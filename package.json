@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/swc-win32-x64-msvc": "^14.2.13",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "formik": "^2.4.6",
