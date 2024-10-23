@@ -1,0 +1,36 @@
+.ButtonMainDiv {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.BackModel {
+    padding: 6px;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid var(--border);
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+
+.ButtonText {
+    font-family: 'Poppins-Medium';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+
+}
+
+@media (max-width: 830px) {
+    .ButtonText {
+        font-size: 18px;
+    }
+}

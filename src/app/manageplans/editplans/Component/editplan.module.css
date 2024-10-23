@@ -1,0 +1,402 @@
+.MainDivForManagePlans {
+  /* display: grid;
+    gap: 32px;
+    margin-top: 42px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+  gap: 32px;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.MainDivForPopularPlanMain {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.MainDivForPlansCart {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  background: var(--white);
+  max-width: 285px;
+  position: relative;
+}
+
+.HedingStanderd {
+  color: var(--dark);
+  margin-bottom: 16px !important;
+}
+
+.DiscriptionTextHading {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #576b75;
+  margin-top: 3px;
+}
+
+.MainDivForToggalAndActiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.ActivatePlanes {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.YesNoSwitch {
+  max-height: 30px;
+}
+
+.PriceText {
+  margin-top: 30px;
+  padding-top: 8px;
+}
+
+.FeaturesText {
+  font-family: "Poppins-Black";
+  margin-top: 30px;
+}
+
+.MainDivForFeatures {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.EnrolledText {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.MainDivForEnrolled {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.ActivatePlanesButtonMain {
+  display: flex;
+  width: 100%;
+  gap: 14px;
+}
+
+.DeletePlan {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  background-color: #ff25301a;
+  border: none;
+  outline: none;
+  color: var(--error);
+  border-radius: 5px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  transition: all 0.7s ease;
+}
+.DeletePlan:hover {
+  background-color: #ff253033 !important;
+}
+.EditPlan {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  background-color: #2256991a;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  border-radius: 5px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  transition: all 0.7s ease;
+}
+.EditPlan:hover {
+  background-color: #22569933 !important;
+}
+
+.MainDivForSvgAndAddPlans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AddNewPlanSvgDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--buttonRadius);
+  background: var(--surfacePrimary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AddNewPlanText {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.MainDivForAddPlansCart {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  background: var(--white);
+  min-width: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.MainDivForSvgAndAddPlans:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+.MainDivForFirstPlan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.MainDivForFirstPlanText {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.NoPlansAvailableText {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--dark);
+}
+
+.FileSvgIcon {
+  margin-bottom: 20px;
+}
+
+.CreatFirstPlansText {
+  font-family: "Poppins-Medium";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--subtitle);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 420px) {
+  .DiscriptionTextHading {
+    font-size: 11px;
+  }
+
+  .PriceText {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .MainDivForToggalAndActiv {
+    margin-top: 15px;
+  }
+
+  .FeaturesText {
+    margin-top: 15px;
+    font-size: 12px;
+  }
+
+  .MainDivForFeatures {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .MainDivForEnrolled {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .EnrolledText {
+    font-size: 12px;
+  }
+
+  .DeletePlan {
+    font-size: 12px;
+  }
+
+  .EditPlan {
+    font-size: 12px;
+  }
+
+  .MainDivForAddPlansCart {
+    min-width: calc(100% - 64px);
+  }
+}
+
+.MainDivForPlanInformation {
+  width: 100%;
+  display: flex;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--border);
+  margin-top: 64px;
+}
+
+.MainDivForPlanFeatures {
+  width: 100%;
+  display: flex;
+  padding-bottom: 60px;
+  margin-top: 32px;
+}
+
+.HedingMainDiv {
+  width: 30%;
+}
+
+.ManiDivForPlanInformationFild {
+  width: 70%;
+}
+
+.MainDivForPlanTitle {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ManageWidthPlanTitle {
+  width: 100%;
+}
+
+.MainDivForDescriptionPlan {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.MainDivForPlanType {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.MainDivForFeturshOption {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.AddIncomeBtm {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 1px solid var(--border) !important;
+  margin-top: 0px !important;
+}
+
+.AddIncomeBtm:hover {
+  text-decoration: underline;
+  background-color: var(--white) !important;
+  transition: all 0.4s ease;
+}
+
+.CancelButton {
+  background-color: var(--white) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+.CancelButton:hover {
+  background-color: #d5e3f6 !important;
+}
+.MainDivForButtonCancelCreat {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+  max-width: 354px;
+  margin-left: auto;
+}
+
+.MainDivForfeatureAndDelete {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.DeleteButton {
+  width: 28px;
+  height: 28px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #ffd6d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 750px) {
+  .MainDivForPlanInformation {
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .ManiDivForPlanInformationFild {
+    width: 100%;
+  }
+
+  .HedingMainDiv {
+    width: 100%;
+  }
+
+  .ManiDivForPlanInformationFild {
+    width: 100%;
+  }
+
+  .HedingMainDiv {
+    width: 100%;
+  }
+
+  .MainDivForPlanFeatures {
+    display: block;
+    padding-bottom: 14px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .MainDivForPlanTitle {
+    display: block;
+  }
+}

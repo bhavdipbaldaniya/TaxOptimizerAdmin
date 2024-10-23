@@ -1,0 +1,227 @@
+@import url("./font.css");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  /* line-height: 1; */
+  box-sizing: content-box !important;
+}
+
+:root {
+  --primary: #225699;
+  --purple: #cbd3ff;
+  --lightYello: #fff2ba;
+  --lightBinary: #cee6ff;
+  --lightGreen: #dbedec;
+  --secondary: #237ab9;
+  --tertiary: #47b4bb;
+  --body: #1d345b;
+  --subtitle: #8e94a4;
+  --white: #ffffff;
+  --surfacePrimary: #f3f6f8;
+  --surfacePrimaryHover: #dadddf;
+  --border: #C4CFD4;
+  --dark: #18253d;
+  --warning: #f09000;
+  --error: #d51010;
+  --errorHover: #b91111;
+  --success: #009b83;
+  --LinearGradientTwo: #3e6ec1;
+  --SidBarActiv: #213354;
+  --DarkPurple: #6e66f1;
+  --radius: 8px;
+  --gap: 10px;
+  --buttonRadius: 10px;
+  --input_label_gap: 15px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder,
+::-moz-placeholder {
+  font-family: "Poppins-Medium" !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--subtitle);
+}
+
+
+/* input {
+  font-family: 'Poppins-Medium' !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+
+} */
+
+.LableText {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--dark);
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* ************ FONT CSS ****************** */
+
+.boldFont {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.MediumFont {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.HeadingTextH1 {
+  font-family: "Poppins-Medium";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.DisplayFont {
+  font-family: "Poppins-Medium";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.NameFont {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2%;
+  color: var(--dark);
+}
+
+.CaptionFont {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--subtitle);
+}
+
+.Heading3Fonts {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--border);
+}
+
+.Heading2Fonts {
+  font-family: "Poppins-Medium";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark);
+  margin-bottom: 20px !important;
+}
+
+.ErrorText {
+  font-family: "Poppins-Medium";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--error);
+  text-align: left;
+}
+
+/* *********************************** INPUT RADIO ********************************** */
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--white);
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 13px;
+  height: 13px;
+  outline: 1px solid var(--subtitle);
+  outline-offset: 1px;
+  border-radius: 50%;
+}
+
+input[type="radio"] {
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+  outline: 2px solid var(--primary) !important;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--primary);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]::before {
+  background-color: var(--primary);
+}
+
+@media (max-width: 1000px) {
+  .CaptionFont {
+    font-size: 12px;
+  }
+
+  .DisplayFont {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 780px) {
+  .HeadingTextH1 {
+    font-size: 16px;
+  }
+}

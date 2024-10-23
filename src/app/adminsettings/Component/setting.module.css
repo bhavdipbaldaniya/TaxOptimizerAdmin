@@ -1,0 +1,679 @@
+.MainDivForHederTab {
+  padding: 4px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-top: 32px;
+}
+
+.TextTabDiv {
+  padding: 10px 30px;
+  border-radius: var(--radius);
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--subtitle);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.TextTabDivActivTab {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: var(--white);
+  padding: 10px 30px;
+  border-radius: 6px;
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.MainDivForFederalTaxTable {
+  width: calc(100% - 3px);
+  min-width: 686px;
+  border-radius: var(--radius);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  margin-top: 56px;
+}
+
+.NoDataAvelabul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.MainDivForTabHedings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.MainDivForTabHedingsSD {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.MainDivForTabHedingsSDS {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  border-bottom: none;
+}
+
+.MainDivForHadingText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.FederalTaxTaxt {
+  font-family: "Poppins-Medium";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+
+.ReviewAdjustText {
+  font-family: "Poppins-Medium";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--body);
+}
+
+.EditButton {
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--subtitle);
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.EditButton:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.DropDownValiue {
+  margin-top: 0px !important;
+}
+
+.DropDownValiueStatus {
+  margin-top: 0px !important;
+  width: 194px !important;
+}
+
+.MainDivForHadingRightContent {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.SubHedingHeder {
+  background: var(--surfacePrimary);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.SubHedingHederContent {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.SubHedingHederContent:last-child {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: none;
+  border-radius: var(--radius);
+}
+
+.SubHadingText {
+  padding: 16px 24px !important;
+  color: var(--dark) !important;
+  width: 30%;
+  display: flex;
+  border-right: 1px solid var(--border);
+}
+
+.SubHadingTextTaxRate {
+  padding: 16px 24px !important;
+  color: var(--dark) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  width: 70%;
+}
+
+.SubContentText {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--body);
+  color: var(--dark);
+  width: 100%;
+  display: flex;
+  border-right: 1px solid var(--border);
+  padding: 16px 24px 16px 0px;
+}
+
+.SubContentTextSecond {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--body);
+  color: var(--dark);
+  width: 100%;
+  display: flex;
+  padding: 16px 24px 16px 24px !important;
+}
+
+.SubHadingTextContent {
+  color: var(--dark) !important;
+  padding: 0px 3px 0px 24px;
+
+  width: 30%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--border);
+}
+
+.SubContentTextSecondSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  width: 70%;
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--body);
+}
+
+.AddBtnDivRates {
+  min-width: 15%;
+}
+
+/* Edit Setting Start */
+.EditMainDivForHederContent {
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--white);
+  border: 1px solid var(--border);
+}
+
+.EditMainDivForYearAndStatus {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.EditLable {
+  margin-bottom: 15px;
+}
+.selectedYearLabel {
+  margin-bottom: 15px;
+}
+
+.EditLastModifyDev {
+  font-family: "Poppins-Medium";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #808080;
+}
+
+.HedingMainDiv {
+  width: 30%;
+}
+
+.EditMainDivTaxableIncomeRange {
+  width: 100%;
+  display: flex;
+  padding-bottom: 60px;
+  /* border-bottom: 1px solid var(--border); */
+  margin-top: 64px;
+}
+
+.ManiDivForEditInformationFild {
+  width: 70%;
+}
+
+.ManiDivForEditInformationFildSD {
+  width: 100%;
+}
+
+.DeleteButton {
+  width: 28px;
+  height: 28px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #ffd6d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 37px;
+  cursor: pointer;
+}
+
+.DeleteButton:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.EditMainDivForInputAndLableSection {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.EditMainDivForInputAndLableSectionSD {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.EditMainDivForInputAndLableSectionDI {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.EditMainDivForInputAndLableSection:nth-child(1) {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.EditMainDivForInputAndLableSectionSD:nth-child(1) {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.EditLebulManegeDivSecond {
+  width: 20%;
+}
+
+.EditLebulManegeDiv {
+  width: 35%;
+}
+
+.EditLebulManegeDivSD {
+  width: 100%;
+}
+
+.EditDeleteManiDiv {
+  width: 10%;
+}
+
+.EditMainDivForCheckboxManage {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.MainDivForButtonCancelCreat {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+  max-width: 354px;
+  margin-left: auto;
+}
+
+.CancelButton {
+  background-color: var(--white) !important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+.CancelButton:hover {
+  background-color: #d5e3f6 !important;
+}
+.AddIncomeBtm {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 1px solid var(--border) !important;
+  margin-top: 32px !important;
+}
+
+.AddIncomeBtm:hover {
+  text-decoration: underline;
+  background-color: var(--white) !important;
+  transition: all 0.4s ease;
+}
+
+.AddIncomeBtmDI {
+  background-color: var(--white) !important;
+  color: var(--dark) !important;
+  border: 1px solid var(--border) !important;
+  margin-top: 0px !important;
+}
+
+.AddIncomeBtmDI:hover {
+  text-decoration: underline;
+  background-color: var(--white) !important;
+  transition: all 0.4s ease;
+}
+
+/* Edit Setting end */
+
+/* Standard deduction start */
+.SubHedingHederStandardizedDeduction {
+  background: var(--surfacePrimary);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.SubHadingTextStandardizedDeduction {
+  padding: 14px !important;
+  color: var(--dark) !important;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  border-right: 1px solid var(--border);
+}
+
+.SubHadingTextStandardizedDeduction:last-child {
+  padding: 14px !important;
+  color: var(--dark) !important;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  border-right: none;
+}
+
+.MainDivForDataStandardDeduction {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.MainDivForDataStandardDeduction:last-child {
+  background-color: var(--white);
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--radius);
+}
+
+.SubMainDivForDataStandardDeduction {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--body);
+  width: 100%;
+  padding: 14px;
+  border-right: 1px solid var(--border);
+}
+
+.SubMainDivForDataStandardDeduction:last-child {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--body);
+  width: 100%;
+  padding: 14px;
+  border-right: none;
+}
+
+.HadingTextSD {
+  color: var(--dark) !important;
+  margin-bottom: 24px !important;
+}
+
+.MainDivForEditSd {
+  width: 70%;
+}
+
+/* Standard deduction end */
+
+/* Manage Dropdown Items start */
+
+.SubHedingHederManageDropdownItems {
+  background: var(--surfacePrimary);
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.SubHedingHederManageDropdownItemsLeftValue {
+  padding: 14px !important;
+  color: var(--dark) !important;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 30%;
+  border-right: 1px solid var(--border);
+}
+
+.SubHedingHederManageDropdownItemsRightValue {
+  padding: 14px !important;
+  color: var(--dark) !important;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 70%;
+}
+
+.SubMainDivForDataManageDropdownItemsLeft {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--body);
+  width: 30%;
+  padding: 14px;
+  border-right: 1px solid var(--border);
+}
+
+.SubMainDivForDataManageDropdownItemsright {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--body);
+  width: 70%;
+  padding: 14px;
+}
+
+/* Manage Dropdown Items end */
+@media (max-width: 1230px) {
+  .EditMainDivTaxableIncomeRange {
+    display: block;
+  }
+
+  .HedingMainDiv {
+    width: 100%;
+  }
+
+  .ManiDivForEditInformationFild {
+    width: 100%;
+  }
+
+  .MainDivForEditSd {
+    width: 100%;
+  }
+  .Headingtext{
+    margin-bottom: 20px !important;
+  }
+  .HadingTextSD{
+    margin-bottom: 5px !important;
+  }
+}
+
+@media (max-width: 880px) {
+  .EditMainDivForInputAndLableSection {
+    flex-wrap: wrap;
+    margin-top: 20px !important;
+  }
+  .DeleteButton {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 830px) {
+  .SubContentTextSecond {
+    font-size: 11px;
+  }
+
+  .SubContentText {
+    font-size: 12px;
+  }
+
+  .SubContentTextSecondSection {
+    font-size: 12px;
+  }
+
+  .SubHadingTextTaxRate {
+    font-size: 14px !important;
+  }
+
+  .SubHadingText {
+    font-size: 14px !important;
+  }
+
+  .ReviewAdjustText {
+    font-size: 11px;
+  }
+
+  .FederalTaxTaxt {
+    font-size: 16px;
+  }
+
+  .TextTabDivActivTab {
+    font-size: 12px;
+  }
+
+  .TextTabDiv {
+    font-size: 12px;
+  }
+
+  .MainDivForHadingRightContent {
+    gap: 10px;
+  }
+
+  .SubMainDivForDataStandardDeduction {
+    font-size: 12px;
+  }
+
+  .SubMainDivForDataStandardDeduction:last-child {
+    font-size: 12px;
+  }
+
+  .SubHadingTextStandardizedDeduction {
+    font-size: 12px;
+  }
+
+  .SubMainDivForDataManageDropdownItemsright {
+    font-size: 12px;
+  }
+
+  .SubMainDivForDataManageDropdownItemsLeft {
+    font-size: 12px;
+  }
+
+  .SubHedingHederManageDropdownItemsRightValue {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .EditMainDivForInputAndLableSectionSD {
+    display: block !important;
+  }
+
+  .EditMainDivForYearAndStatus {
+    display: block;
+  }
+  .EditLable {
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .EditMainDivTaxableIncomeRange {
+    padding-bottom: 14px;
+    margin-top: 30px !important;
+  }
+  .EditMainDivForInputAndLableSection {
+    display: block !important;
+  }
+  .EditLebulManegeDiv,
+  .EditLebulManegeDivSecond {
+    width: 100% !important;
+  }
+  .DeleteButton{
+    margin-top: 20px;
+  }
+}

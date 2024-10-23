@@ -1,0 +1,174 @@
+.MainDivForCartSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+}
+
+.MainDivForCart {
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.MainDivForTotleRevenue {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.mainDivForSvg {
+  padding: 12px;
+  border-radius: var(--buttonRadius);
+  background-color: var(--lightYello);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDivForSvg1 {
+  padding: 12px;
+  border-radius: var(--buttonRadius);
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDivForSvg2 {
+  padding: 12px;
+  border-radius: var(--buttonRadius);
+  background-color: var(--lightBinary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDivForSvg2 {
+  padding: 12px;
+  border-radius: var(--buttonRadius);
+  background-color: var(--lightBinary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDivForRevenueSvg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+}
+
+.ParsetegeManageMainDiv {
+  padding: 8px 16px;
+  gap: 4px;
+  border-radius: 36px;
+  background-color: var(--lightGreen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.ParsetegeManage {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--success);
+}
+
+.ProgreshSvg {
+  display: flex;
+}
+
+.mainDivForNumberValue {
+  margin-top: 20px;
+}
+
+.inlastMonthText {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--subtitle);
+  margin-top: 12px;
+}
+
+.GoToManagePlans {
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--primary);
+  text-decoration: underline;
+  margin-top: 12px;
+}
+
+.BarGraphMainDiv {
+  margin-top: 32px;
+}
+
+@media (max-width: 1260px) {
+  .MainDivForCartSection {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .inlastMonthText {
+    font-size: 10px;
+  }
+
+  .mainDivForSvg1 {
+    padding: 10px;
+  }
+
+  .mainDivForSvg1 svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .mainDivForSvg {
+    padding: 10px;
+  }
+
+  .mainDivForSvg svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .mainDivForSvg2 {
+    padding: 10px;
+  }
+
+  .mainDivForSvg2 svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 980px) {
+  .MainDivForCartSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 880px) {
+  .MainDivForCartSection {
+    grid-template-columns: 1fr;
+  }
+  .DashboardHeding {
+    font-size: 18px;
+  }
+  .MainDivForCart {
+    padding: 24px;
+  }
+  .MainDivForCartSection {
+    gap: 20px;
+  }
+}

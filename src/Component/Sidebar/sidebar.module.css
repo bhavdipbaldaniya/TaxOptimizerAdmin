@@ -1,0 +1,330 @@
+.ContentSidbarMain {
+  display: flex;
+}
+
+.LogoAndSideBarMain {
+  height: fit-content;
+}
+
+.SideBarLogo {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 22px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--subtitle);
+}
+
+.SidbarMainDiv {
+  padding: 22px 24px 24px 24px;
+  height: calc(100vh - 46px);
+  border-right: 1px solid var(--border);
+  background-color: var(--dark);
+  width: calc(314px - 48px);
+  transition: all .6s ease-in-out;
+}
+
+.SidbarMainDivResponshiv {
+  position: fixed;
+  left: 0;
+  z-index: 99999;
+  padding: 22px 24px 24px 24px;
+  height: calc(100vh - 46px);
+  border-right: 1px solid var(--border);
+  background-color: var(--dark);
+  width: calc(314px - 48px);
+  transition: all .6s ease-in-out;
+  height: 100vh;
+}
+
+.SidbarMainDivAfterTogal {
+  visibility: hidden;
+  width: 0px;
+  transition: all .6s ease-in-out;
+  padding: 22px 0 24px 0;
+  background-color: var(--dark);
+}
+
+.SidbarMainDivAfterTogalResponshiv {
+  position: fixed;
+  z-index: 99999;
+  transition: all .6s ease-in-out;
+  padding: 22px 0 24px 0;
+  background-color: var(--dark);
+  height: 100vh;
+  left: -315px;
+}
+
+
+
+.MainDivForNevBarAndContent {
+  width: 100%;
+}
+
+.SideBarContentDiv {
+  width: calc(314px - 48px);
+}
+
+.SideBarContentDiv123 {
+  visibility: hidden;
+  width: 0px;
+  transition: all .6s ease-in-out;
+
+}
+
+.NavBarSubMain {
+  height: calc(88px - 48px);
+  padding: 24px 32px;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px 0px #00000014;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.TogalSidebarIcon {
+  cursor: pointer;
+}
+
+.TogalSidebarIcon44 {
+  display: none;
+}
+
+.TogalSidebarIcon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+
+
+.NevProfileMainDiv {
+  position: relative;
+  display: flex;
+  align-items: center !important;
+  justify-content: end;
+  text-align: center;
+  gap: 6px;
+}
+
+.SidBarSvg {
+  padding-bottom: 5px;
+}
+
+.MainDivForSidebarTab {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px 34px;
+  border-radius: var(--radius);
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.MainDivForSidebarTabActivet {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px 34px;
+  border-radius: var(--radius);
+  background-color: var(--SidBarActiv);
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.MainDivForSidebarTab:hover {
+  background-color: #25395d;
+  transition: all 0.5s ease;
+}
+
+.MainDivForSidebarTabActiv:hover {
+  background-color: #25395d;
+  transition: all 0.5s ease;
+}
+
+.MainDivForSidebarTabActivet:hover {
+  background-color: #25395d;
+  transition: all 0.5s ease;
+}
+
+
+.MainDivForSidebarTabActiv {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px 34px;
+  border-radius: var(--radius);
+  margin-bottom: 2px;
+  background-color: var(--SidBarActiv);
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.MainDivForSidebarTabDashboard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 24px 34px;
+  border-radius: var(--radius);
+  margin-bottom: 2px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.MainDivForSidebarTabDashboard:hover {
+  background-color: #25395d;
+  transition: all 0.5s ease;
+}
+
+.SubMainDIvActivClass {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.MainTabTextActiv {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.NumberOfNewCostomer {
+  font-family: "Poppins-Medium";
+  height: 17px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 2px 12px;
+  background-color: var(--success);
+  color: var(--white);
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.MainDivCildran {
+  padding: 32px;
+  overflow: auto;
+  height: calc(100vh - 153px);
+  background: var(--surfacePrimary);
+}
+
+.MainDivCildran::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  margin-left: 5px;
+}
+
+.MainDivCildran::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 10px;
+}
+
+.MainDivCildran::-webkit-scrollbar-track {
+  border-radius: var(--buttonRadius);
+}
+
+/* .MainDivCildranAfterTogal {
+  padding: 32px;
+  margin-left: -266px;
+
+} */
+
+.NameTextNevBar {
+  color: var(--dark) !important;
+  cursor: pointer;
+}
+
+.NavProfileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.NavProIconAndText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.SubMainNevDropDownIconRotet {
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.SubMainNevDropDownIcon {
+  cursor: pointer;
+}
+
+.MaiDivForDropdwon {
+  position: absolute;
+  box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0;
+  top: 40px;
+  width: 150px;
+  transition: all 0.3s ease;
+}
+
+.MaiDivForDropdwonHide {
+  display: none;
+}
+
+.DropValue {
+  font-family: "Poppins-Medium";
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--subtitle);
+  padding: 10px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.DropValue:hover {
+  background-color: #cee6ff;
+  color: var(--primary);
+  transition: all 0.4s linear;
+}
+
+.DropValue:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1430px) {
+  .TogalSidebarIcon44 {
+    display: block;
+  }
+
+  .TogalSidebarIcon44:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+  }
+
+}
+
+
+@media (max-width:600px) {
+  .MainDivCildran{
+    padding: 20px;
+  }
+}

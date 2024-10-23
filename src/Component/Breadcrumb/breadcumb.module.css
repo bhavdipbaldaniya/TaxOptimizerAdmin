@@ -1,0 +1,35 @@
+.mainDivForButtoneSubTitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.BackHadiengText {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #667085;
+}
+
+.BackHadiengText:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.CurentPageText {
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .BackHadiengText,
+  .CurentPageText {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,481 @@
+.label {
+  width: 100%;
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  color: var(--body);
+  /* margin-top: 15px; */
+}
+
+.input {
+  width: calc(100% - 42px);
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 8px 20px;
+  outline: none;
+  margin-top: 6px;
+  min-width: 120px;
+}
+
+.input:disabled {
+  background: rgba(245, 245, 245, 1);
+  color: #8e94a4;
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .input:focus,
+.input:focus-visible {
+  border: 1px solid #80878b;
+  background-color: var(--surfacePrimary);
+} */
+
+.defult_button {
+  padding: 10px 0;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid var(--primary);
+  border-radius: var(--buttonRadius);
+  background-color: var(--primary);
+
+  font-family: "Poppins-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white);
+}
+
+.ButtonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* gap: 10px; */
+}
+
+.defult_button:not(:disabled):hover {
+  background-color: rgb(34 86 153 / 80%);
+  transition: all 0.4s ease;
+}
+
+.defult_button:disabled {
+  background-color: #838383cc;
+  border: none;
+}
+
+/******************************************************* MODAL CSS *******************************************************/
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 27px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  top: 50%;
+}
+
+.ModalMainDiv {
+  background: #000000cc;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  cursor: auto;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.ModelContain {
+  width: calc(498px - 96px);
+  background: #ffffff;
+  box-shadow: 4px 4px 10px 0 #2929291a;
+  /* / max-width: 600px; /
+  / max-height: 500px; / */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius);
+  padding: 48px 48px;
+}
+
+.DraftModelContain {
+  width: 32%;
+  background: #ffffff;
+  box-shadow: 4px 4px 10px 0 #2929291a;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius);
+  padding: 30px 30px;
+}
+
+.ModalHaed {
+  display: flex;
+  flex-direction: column;
+}
+
+.Modelheader {
+  text-align: center;
+  font-weight: 600;
+  color: #18253d;
+  font-size: 24px;
+}
+
+.ModelText {
+  margin-top: 12px;
+  text-align: center;
+  padding: 0 0 15px;
+  font-weight: 500;
+  color: var(--subtitle);
+  font-size: 16px;
+}
+
+.ModalInput {
+  padding: 5px 15px;
+}
+
+.ModalButtons {
+  display: flex;
+  gap: 20px;
+  margin: 24px;
+}
+
+.ModalCancelButton {
+  background-color: var(--surfacePrimary);
+  color: var(--dark);
+  border: none;
+}
+
+.ModalCancelButton:hover {
+  background-color: var(--surfacePrimaryHover) !important;
+  transition: all 0.4s ease !important;
+}
+
+.ModalDeleteButton {
+  background-color: var(--error);
+  border: none;
+}
+
+.ModalDeleteButton:hover {
+  background-color: var(--errorHover) !important;
+  transition: all 0.4s ease !important;
+}
+
+.CrossSvg {
+  display: flex;
+  justify-content: end;
+  margin-top: -17px;
+  margin-right: -16px;
+}
+
+.DraftModalSaveBtn {
+  margin-top: 27px;
+  display: flex;
+  width: 40%;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.CancellBtn {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.CancellBtn:hover {
+  background-color: var(--white) !important;
+  text-decoration: underline;
+}
+
+/******************************************************* DROP DOWN CSS *******************************************************/
+
+.SelectMain {
+  padding: 8px 20px;
+  width: calc(100% - 44px);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+  background-color: var(--white);
+  /* min-height: 50px; */
+}
+
+.SelectSubMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.Select {
+  font-weight: 400;
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  color: var(--subtitle);
+}
+
+.selectedText {
+  color: var(--subtitle);
+  font-weight: 600;
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+}
+
+.disable {
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.OpenSelectMain {
+  position: absolute;
+  box-shadow: #5c717e;
+  width: calc(100% - 20px);
+  top: 53px;
+  right: 0px;
+  background-color: var(--white);
+  border-radius: 10px;
+  z-index: 999;
+  max-height: 200px;
+  padding: 0 10px 0 10px;
+  overflow-y: auto;
+}
+
+.OpenSelectMain::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  margin-left: 5px;
+}
+
+.OpenSelectMain::-webkit-scrollbar-thumb {
+  background-color: #80878b;
+  border-radius: 10px;
+}
+
+.OpenSelectMain::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.search::placeholder {
+  color: var(--subtitle);
+  background: url(../../Assets/images/Group.webp) no-repeat;
+  padding-left: 22px;
+  background-size: 20px;
+  mix-blend-mode: multiply;
+  font-family: "Poppins-Medium";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  background-size: 20px;
+}
+
+.search {
+  width: calc(100% - 32px);
+  margin: 10px 0 10px 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 8px 15px 8px 15px;
+  outline: none;
+}
+
+.MainForOptionSelected {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 0 1px 0;
+}
+
+/* .MainForOptionSelected:first-child {
+  border-radius: 10px10px 0 0;
+} */
+
+/* .MainForOptionSelected:last-child {
+  border-radius: 0 0 10px 10px;
+} */
+
+.MainForOptionSelected:hover {
+  color: var(--white);
+  background-color: rgb(34 86 153 / 80%);
+  transition: all 0.4s ease;
+}
+
+.SelectedValue {
+  color: var(--white);
+  font-weight: 300;
+  font-family: "Poppins-Medium";
+  background-color: var(--primary);
+}
+
+.InputSearch {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 11px 14px;
+  outline: none;
+}
+
+.InputSearch::placeholder {
+  color: var(--subtitle);
+  background: url(../../Assets/images/Group.webp) no-repeat;
+  background-size: 20px;
+  mix-blend-mode: multiply;
+  padding-left: 22px;
+}
+
+.SelectTextDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ************************************************ TOGGLE SWITCH **************************************** */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: 87px;
+  background-color: var(--white);
+}
+
+.option {
+  text-align: center;
+  width: 40px;
+  height: 34px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--subtitle);
+  background-color: var(--white);
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.9s ease;
+}
+
+.option.selectedYes {
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: var(--radius);
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.option.selectedNo {
+  background-color: #8d8d8d;
+  color: var(--white);
+  border-radius: var(--radius);
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+/* ************************************************************ RADIO OPTION  ****************************************************** */
+
+.containerRadio {
+  margin-top: 6px;
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 15px 10px 15px;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 30px);
+  background-color: var(--white);
+  gap: 7px;
+}
+
+.optionContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.option_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--subtitle);
+}
+
+/* ******************************************************************* TEXT AREA  ************************************************************************* */
+
+.TextArea {
+  width: calc(100% - 42px);
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 8px 20px;
+  outline: none;
+  margin-top: 12px;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+@media (max-width: 780px) {
+  .label {
+    font-size: 12px;
+  }
+
+  .defult_button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 570px) {
+  .ModelContain {
+    width: fit-content;
+    max-width: calc(498px - 96px);
+    padding: 48px 20px;
+  }
+  .input::placeholder {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 520px) {
+  .Modelheader {
+    font-size: 20px;
+  }
+
+  .ModelText {
+    font-size: 12px;
+  }
+
+  .ModalCancelButton,
+  .ModalDeleteButton {
+    font-size: 12px;
+  }
+}

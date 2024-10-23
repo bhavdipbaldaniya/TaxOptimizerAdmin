@@ -1,0 +1,89 @@
+.ProfilePicMainDiv {
+  margin-top: 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: var(--radius);
+}
+
+.MainDivForBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.ProfilePicSubDiv {
+  position: relative;
+  width: fit-content;
+}
+.profilephoto {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+}
+
+.EditIcon {
+  bottom: 2px;
+  right: 0;
+  position: absolute;
+}
+
+.MainDivForInput {
+  margin-top: 26px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.SubDivForInput {
+  width: 100%;
+}
+
+.InputMainDiv {
+  width: 600px;
+}
+
+.SaveBtn {
+  margin-top: 27px;
+  display: flex;
+  width: 25%;
+  margin-left: auto;
+}
+
+@media (max-width: 900px) {
+  .profilephoto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .EditIcon svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .profilephoto {
+    width: 60px;
+    height: 60px;
+  }
+
+  .EditIcon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .InputMainDiv {
+    width: 100%;
+  }
+  .MainDivForBtn{
+    margin-bottom: 20px !important;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .MainDivForInput {
+    display: block;
+    margin-top: 0px !important;
+  }
+}
+
